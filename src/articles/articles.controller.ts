@@ -14,13 +14,14 @@ export class ArticlesController {
     finAll(){
         return this.articlesService.findAll()
     }
-    @Get(':productId')
-    getOne(@Param('productId') productId: string) {   // 👈
-    return this.articlesService.findOne(productId);
+    @Get(':id')
+    getOne(@Param('id') ArticleID: string) {   // 👈
+    return this.articlesService.findOne(ArticleID);
   }
   @Delete(':id')
-  delete(@Param('id') id: string) {
-    return this.articlesService.remove(id);
+  delete(@Param('id') ArticleID: string) {
+     this.articlesService.DeleteArticle(ArticleID);
+     return null;
   }
  
     /*finOne(){

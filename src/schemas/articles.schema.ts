@@ -8,14 +8,17 @@ export class Article {
   @Prop()
   created_at: string;
 
-  @Prop({required: true} )
+  @Prop({required: true})
   title: string;
 
-  @Prop()
+  @Prop({required: true})
   story_title: string;
 
   @Prop()
   author: string;
+
+  @Prop()
+  url: string;
 
   @Prop({required: true })
   story_url: string;
