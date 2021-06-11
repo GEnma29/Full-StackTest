@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  nextjs:
+    container_name: next_client 
+    image: sunny0183/nextjs-docker
+    ports:
+      - "3000:3000"
+  nestjs:
+    image: nestjs/cli
+    container_name: nest_mongo_server 
+    environment:
+      MONGO_ATLAS_USER: Testreign
+      MONGO_ATLAS_PASSWORD: reigntest
+      MONGO_ATLAS_DB: articles_test
+    ports:
+      - "27017:27017"

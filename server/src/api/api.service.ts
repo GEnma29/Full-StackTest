@@ -17,7 +17,7 @@ export class ApiService {
     const articleCollection = this.connection.collection('articles'); // connect to db
     articleCollection.drop(); // eliminate all documents of db
     const response = await this.httpService.get(UrlApi).toPromise(); // fetch data api
-    const Articles = response.data.hits; //
+    const Articles = response.data.hits; // response 
     //console.log(Articles)
     function insertData(Article) {
       const { created_at, title, story_title, author, url, story_url } =
