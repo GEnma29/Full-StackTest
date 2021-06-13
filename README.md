@@ -40,6 +40,10 @@ now start with
 
 ``` npm run dev```
 
+go to: 
+
+http://localhost:3000/
+
 now you see that:
 
 ![crud](https://user-images.githubusercontent.com/53823068/121756093-fd8b8480-cae6-11eb-9d06-4b09fac34b53.JPG)
